@@ -5,7 +5,7 @@ def solve() -> int:
         measurement = 0
         arr = []
 
-        f = open('input.txt', 'r')
+        f = open('input/input.txt', 'r')
         for line in f.readlines():
             if line:
                 arr.append(int(line))

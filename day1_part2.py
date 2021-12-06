@@ -3,7 +3,7 @@
 def solve() -> int:
     arr = []
 
-    f = open('input.txt', 'r')
+    f = open('input/input.txt', 'r')
     for line in f.readlines():
         arr.append(int(line))
 
