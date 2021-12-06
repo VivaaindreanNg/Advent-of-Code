@@ -3,15 +3,15 @@ def solve() -> int:
     try:
         total = 0
         measurement = 0
-        input_list = []
+        arr = []
 
         f = open('input.txt', 'r')
         for line in f.readlines():
             if line:
-                input_list.append(int(line))
+                arr.append(int(line))
         f.close()
 
-        for i in input_list:
+        for i in arr:
             if i > measurement:
                 total += 1
             measurement = i
