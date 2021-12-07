@@ -9,7 +9,6 @@ def solve(input_data: list) -> int:
     for i in input_data:
         line = [data for data in i.split()]
         axis, value = line[0], int(line[1])
-        # print(axis, value)
 
         if axis == 'forward':
             x_axis += value
