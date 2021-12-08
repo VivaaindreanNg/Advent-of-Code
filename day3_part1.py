@@ -2,7 +2,6 @@ from utils import convert_input_file_to_list
 
 
 def solve(input_data: list) -> int:
-    gamma = None
     gamma_rate = ''
     epsilon_rate = ''
     dec_gamma = 0
