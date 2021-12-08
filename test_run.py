@@ -15,7 +15,7 @@ def test_day2_part1() -> None:
     answer = 150
     calculated = solve_day2_part1(input_data)
 
-    assert(calculated == 150)
+    assert(calculated == answer)
 
 
 def test_day2_part2() -> None:
