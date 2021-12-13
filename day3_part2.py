@@ -1,3 +1,4 @@
+from collections import Counter
 
 def solve(input_data: list) -> int:
     oxygen_rate = 0
