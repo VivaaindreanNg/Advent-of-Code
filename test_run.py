@@ -50,7 +50,7 @@ def test_day3_part1() -> None:
 
 
 def test_day3_part2() -> None:
-    answer = 1
+    answer = 230
     calculated = solve_day3_part2(input_d3)
 
     assert(calculated == answer)
