@@ -1,3 +1,3 @@
-This is my solution for Advent of Code 2021 contest.
+This is my solution for Advent of Code contest.
 
 Language: Python
