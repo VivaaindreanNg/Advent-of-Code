@@ -28,9 +28,7 @@ def solve(input_data: List[str]) -> int:
 
         if bitcount_0 > bitcount_1:
             most_common_bit = '0'
-        elif bitcount_0 < bitcount_1:
-            most_common_bit = '1'
-        elif bitcount_0 == bitcount_1:
+        elif bitcount_0 <= bitcount_1:
             most_common_bit = '1'
         
         temp_oxygen_list = []
@@ -61,9 +59,7 @@ def solve(input_data: List[str]) -> int:
 
         if bitcount_0 > bitcount_1:
             least_common_bit = '1'
-        elif bitcount_0 < bitcount_1:
-            least_common_bit = '0'
-        elif bitcount_0 == bitcount_1:
+        elif bitcount_0 <= bitcount_1:
             least_common_bit = '0'
         
         temp_co2_list = []
