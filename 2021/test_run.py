@@ -2,7 +2,7 @@ from day2_part1 import solve as solve_day2_part1
 from day2_part2 import solve as solve_day2_part2
 from day3_part1 import solve as solve_day3_part1
 from day3_part2 import solve as solve_day3_part2
-from day4_part1 import solve as solve_day4_part1
+from day5_part1 import solve as solve_day5_part1
 
 input_d2 = [
     'forward 5',
@@ -50,6 +50,41 @@ input_d4 = """\
  2  0 12  3  7
 """
 
+input_d5 = """\
+0,9 -> 5,9
+8,0 -> 0,8
+9,4 -> 3,4
+2,2 -> 2,1
+7,0 -> 7,4
+6,4 -> 2,0
+0,9 -> 2,9
+3,4 -> 1,4
+0,0 -> 8,8
+5,5 -> 8,2
+"""
+
+'''
+.......1..
+..1....1..
+..1....1..
+.......1..
+.112111211
+..........
+..........
+..........
+..........
+222111....
+
+Visualization: 
+(0, 0) (1, 0) ...  (col, row)
+(0, 1) (1, 1)
+(0, 2) (1, 2)
+(0, 3) (1, 3)
+...     ...
+(0, 8) (1, 8)
+(0, 9) (1, 9) (2, 9) ... (8, 9) (9, 9)
+'''
+
 
 def test_day2_part1() -> None:
     answer = 150
@@ -78,8 +113,14 @@ def test_day3_part2() -> None:
 
     assert(calculated == answer)
 
-def test_day4_part1() -> None:
-    answer = 4512
-    calculated = solve_day4_part1(input_d4)
+# def test_day4_part1() -> None:
+#     answer = 4512
+#     calculated = solve_day4_part1(input_d4)
 
-    assert calculated == answer
+#     assert calculated == answer
+
+def test_day5_part1() -> None:
+    answer = 5
+    calculated = solve_day5_part1(input_d5)
+
+    assert(calculated == answer)
