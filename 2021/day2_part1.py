@@ -1,4 +1,3 @@
-
 from utils import convert_input_file_to_list
 
 
@@ -10,9 +9,9 @@ def solve(input_data: list) -> int:
         line = [data for data in i.split()]
         axis, value = line[0], int(line[1])
 
-        if axis == 'forward':
+        if axis == "forward":
             x_axis += value
-        elif axis == 'up':
+        elif axis == "up":
             y_axis -= value
         else:
             y_axis += value
@@ -20,6 +19,6 @@ def solve(input_data: list) -> int:
     return x_axis * y_axis
 
 
-if __name__ == '__main__':
-    input_data = convert_input_file_to_list('input/input2.txt')
+if __name__ == "__main__":
+    input_data = convert_input_file_to_list("input/input2.txt")
     print(solve(input_data))

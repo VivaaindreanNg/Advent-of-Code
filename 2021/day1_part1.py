@@ -1,11 +1,10 @@
-
 def solve() -> int:
     try:
         total = 0
         measurement = 0
         arr = []
 
-        f = open('input/input.txt', 'r')
+        f = open("input/input.txt", "r")
         for line in f.readlines():
             if line:
                 arr.append(int(line))
@@ -18,8 +17,8 @@ def solve() -> int:
 
         return total - 1
     except IOError:
-        print('Error opening file')
+        print("Error opening file")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(solve())

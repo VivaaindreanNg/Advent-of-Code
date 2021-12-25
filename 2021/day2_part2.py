@@ -10,9 +10,9 @@ def solve(input_data: list) -> None:
         line = i.split()
         direction, value = line[0], int(line[1])
 
-        if direction == 'up':
+        if direction == "up":
             aim -= value
-        elif direction == 'down':
+        elif direction == "down":
             aim += value
         else:
             horizontal_pos += value
@@ -21,6 +21,6 @@ def solve(input_data: list) -> None:
     return horizontal_pos * depth
 
 
-if __name__ == '__main__':
-    input_data = convert_input_file_to_list('input/input2.txt')
+if __name__ == "__main__":
+    input_data = convert_input_file_to_list("input/input2.txt")
     print(solve(input_data))
