@@ -1,6 +1,7 @@
-from typing import List
-from utils import convert_input_file_to_list
 from collections import Counter
+from typing import List
+
+from utils import convert_input_file_to_list
 
 
 def solve(input_data: List[str]) -> int:
