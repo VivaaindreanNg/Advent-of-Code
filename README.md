@@ -1,3 +1,3 @@
-My solutions for Advent of Code challenges (Mainly in Python).
+### My solutions for Advent of Code challenges (Mainly in Python).
 
-[ ] Remove .vscode directory.
+- [ ] Remove .vscode directory.
