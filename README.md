@@ -1,3 +1,3 @@
-This is my solution for Advent of Code challenges.
+My solutions for Advent of Code challenges (Mainly in Python).
 
-Language: Python
+[ ] Remove .vscode directory.
